@@ -1,33 +1,39 @@
 # cpp_learn
-Iyaiya~~
 
-## Nowdays:
+## Nowdays
 
-[C++ Primer 5th](#c-primer-5th)<br>
-Effective C++
+[C++ Primer 5th](#c-primer-5th)
 
-## Future:
+## Future
 
-More Effective C++<br>
-Inside the C++ Object Model<br>
-The Annotated STL Sources<br>
-C++ concurrency in action<br>
+Effective C++  
+More Effective C++  
+Inside the C++ Object Model  
+The Annotated STL Sources  
+C++ concurrency in action  
 C++ Templates
 
 ---
 
 ## C++ Primer 5th
-[本书源代码](./cpp_primer/source) 和 [参考答案](https://github.com/Mooophy/Cpp-Primer)(膜大佬)
+
+[我的代码](./cpp_primer/source) 和 [参考答案](https://github.com/Mooophy/Cpp-Primer)
 
 ### ch1
-1.有符号和无符号运算，默认先转为无符号
+
+1.复习一下CSAPP学的不同类型运算的转换，有符号和无符号运算，默认先转为无符号，先保证同有无符号；然后如果大小不同，那么符号扩展到相同类型，要明白只有相同类型才能运算。
 
 ### ch2
+
 1.extern是只声明不定义(此时不能跟着值,不然失效)，从而让别的文件的变量能为程序所知，提示编译器遇到此变量和函数时在其他模块中寻找其定义；而不带extern的是声明并定义(这里带上extern也是定义，失去了作用，不过可以当成一个注释的作用)，会获得一个具名的可操作的对象实体。
 
-2.引用本身和硬链接类似，没有所谓的实体(硬链接没有inode)，只是实体的一个别名而已 
+2.引用本身和硬链接类似，没有所谓的实体(硬链接没有inode)，只是实体的一个别名而已
 
-3.看复合类型从右往左最贴近标识符的说明了类型，int *& val; => int *(&val); 是对int *的引用
+3.看复合类型从右往左最贴近标识符的说明了类型
+
+  ```c++v
+  int *& val; => int *(&val); // 比如这个复制的类型，其实是对int *的引用
+  ```
 
 4.多个文件同名的全局变量定义，是分别定义使用的，不会干扰，这是默认情况，多文件重名的分别定义不共享；如果需要共享那么只能定义一次(不然会不知道声明引用的是哪一个)，然后extern声明。
 如果想要共享，那么最好全部加上extern，定义的那个可加可不加(最好加上来表明这个定义要被其他文件使用)
