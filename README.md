@@ -17,7 +17,7 @@ C++ Templates
 
 ## C++ Primer 5th
 
-[我的代码](./cpp_primer/source) 和 [参考答案](https://github.com/Mooophy/Cpp-Primer)
+[书上的源代码](./cpp_primer/source) 和 [参考答案](https://github.com/Mooophy/Cpp-Primer)
 
 ### ch1
 
@@ -49,5 +49,7 @@ C++ Templates
 9.auto
 
 10.decltype
+
+11.C的C风格字符串本质是数组，所以==比较的就是数组地址是否相同；java、C#的String的==默认也都是比较地址；而C++的string类型特殊，它实现的==比较的就是字符串，不是地址。
 
 ### ch3
