@@ -22,7 +22,8 @@ C++ Templates
 
 ### Index
 
-1. [CH1](#CH1)
+- [CH1](#CH1)
+- [CH2](#CH2)
 
 ### CH1
 
@@ -67,9 +68,7 @@ C++ Templates
 
 ## 一些总结性的文章
 
-### Index
-
-1. [关于全局变量多文件共享全局变量(extern、static)的总结](#关于全局变量多文件共享全局变量(extern、static)的总结)
+1. [关于全局变量多文件共享全局变量(extern、static)的总结](#关于全局变量多文件共享全局变量externstatic的总结)
 
 ### 关于全局变量多文件共享全局变量(extern、static)的总结
 
