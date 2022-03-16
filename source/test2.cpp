@@ -6,7 +6,7 @@ int main()
 	// 	a = 2;
 	// 	return 0;
 
-	goto end;
+	goto end; // right
 	int a;
 	a = 1;
 end:
